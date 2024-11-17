@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetTitle, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
@@ -12,6 +12,7 @@ const MobileNav = () => {
   const pathName = usePathname();
   return (
     <Sheet>
+      <SheetTitle></SheetTitle>
       <SheetTrigger className="flex justify-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
@@ -19,7 +20,7 @@ const MobileNav = () => {
         {/* logo */}
         <div className="mt-24 mb-20 text-center text-2xl">
           <Link className="flex items-center justify-center" href={"/"}>
-            <Image src={"/logo.png"} alt="logo" width={50} height={10} />
+            <Image src={"/assets/logo.png"} alt="logo" width={50} height={10} />
             <h1 className="text-4xl font-semibold">
               Tanvirul<span className="text-accent">.</span>
             </h1>
