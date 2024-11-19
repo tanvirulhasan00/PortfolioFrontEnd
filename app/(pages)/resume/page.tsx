@@ -8,6 +8,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+
 const about = {
   title: "About me",
   description:
@@ -19,7 +20,7 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+880) 1979896928",
+      fieldValue: "(+880) 1970806028",
     },
     {
       fieldName: "LinkedIn",
@@ -47,7 +48,6 @@ const about = {
     },
   ],
 };
-
 //experience data
 const experience = {
   icon: "",
@@ -96,7 +96,6 @@ const education = {
     },
   ],
 };
-
 //skills data
 const skills = {
   title: "My skills",
