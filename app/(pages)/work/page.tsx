@@ -31,7 +31,7 @@ const projects = [
     num: "02",
     catagory: "front-end",
     title: "EdgeLedger",
-    description: "EdgeLedger provide world class financial assistance",
+    description: "EdgeLedger provides world class financial assistance",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
     image: "/assets/work/edge.png",
     live: "",

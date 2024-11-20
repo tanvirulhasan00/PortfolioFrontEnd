@@ -48,10 +48,7 @@ const Contact = () => {
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-accent text-4xl">Let's work together</h3>
-              <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-                sint non amet repudiandae.
-              </p>
+              <p className="text-white/60">Enhance your business with me.</p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="firstname" placeholder="Firstname" />
@@ -67,9 +64,9 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="est">Web Application</SelectItem>
+                    <SelectItem value="cst">Mobile Application</SelectItem>
+                    <SelectItem value="mst">E-Commerce</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
