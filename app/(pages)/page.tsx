@@ -1,7 +1,9 @@
+"use client";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import React from "react";
 import { FiDownload } from "react-icons/fi";
 
@@ -28,7 +30,14 @@ const Home = () => {
                 size={"lg"}
                 className="uppercase flex items-center gap-2 border"
               >
-                <span>Download CV</span>
+                <Link
+                  target="_blank"
+                  href={
+                    "https://drive.google.com/file/d/19lczHy66qK-izEs4h6U21HDxZcZF_hzz/view?usp=sharing"
+                  }
+                >
+                  Download CV
+                </Link>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
