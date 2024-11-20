@@ -24,12 +24,12 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "youremail@gamil.com",
+    description: "tanvirhasan00@gamil.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Dhaka,Bangladesh",
+    description: "Ashulia,Savar,Dhaka,Bangladesh",
   },
 ];
 

@@ -19,35 +19,42 @@ import "swiper/css";
 const projects = [
   {
     num: "01",
-    catagory: "frontend",
-    title: "project 1",
-    description:
-      "When an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
-    image: "/assets/photo.png",
-    live: "",
+    catagory: "Full stack",
+    title: "E-desh Ltd",
+    description: "A deliverey management application.",
+    stack: [{ name: "React" }, { name: "CSS 3" }, { name: ".NET 3.1" }],
+    image: "/assets/work/edesh.png",
+    live: "https://api.e-deshdelivery.com/",
     github: "",
   },
   {
     num: "02",
-    catagory: "frontend",
-    title: "project 2",
-    description:
-      "When an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    catagory: "front-end",
+    title: "EdgeLedger",
+    description: "EdgeLedger provide world class financial assistance",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
-    image: "/assets/photo.png",
+    image: "/assets/work/edge.png",
     live: "",
-    github: "",
+    github: "https://github.com/tanvirulhasan00/EdgeLedger",
   },
   {
     num: "03",
-    catagory: "frontend",
-    title: "project 3",
-    description:
-      "When an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    catagory: "front-end",
+    title: "NewsGrid",
+    description: "This is a news portal website.",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
-    image: "/assets/photo.png",
-    live: "",
+    image: "/assets/work/newsgrid.png",
+    live: "https://neon-druid-d13908.netlify.app/",
+    github: "https://github.com/tanvirulhasan00/NewsGrid-Webside",
+  },
+  {
+    num: "04",
+    catagory: "frontend",
+    title: "Git Finder",
+    description: "This where you can find anyone in github",
+    stack: [{ name: "React" }, { name: "CSS 3" }, { name: "Javascript" }],
+    image: "/assets/work/gitfinder.png",
+    live: "https://githubfinder87456834.netlify.app/",
     github: "",
   },
 ];
@@ -78,8 +85,11 @@ const Work = () => {
                 {project.num}
               </div>
               {/* project category */}
-              <h2 className="atext-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <p className="text-white/80 leading-snug">
                 {project.catagory} project
+              </p>
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                {project.title}
               </h2>
               {/* prioject description */}
               <p className="text-white/60">{project.description}</p>
@@ -120,7 +130,7 @@ const Work = () => {
                         <BsGithub className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>github repo</p>
+                        <p>github repository</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -128,7 +138,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">
+          <div className="w-full h-[500px] xl:w-[50%]">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}

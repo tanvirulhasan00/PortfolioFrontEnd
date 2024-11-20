@@ -7,28 +7,21 @@ const services = [
     num: "01",
     title: "Web Application",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Develop robust online applications to suit your business needs",
     href: "",
   },
   {
     num: "02",
     title: "Mobile Application",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Developing innovative and native mobile apps for Android, iOS platforms",
     href: "",
   },
   {
     num: "03",
-    title: "Database Management",
+    title: "E-Commerce",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "UI/UX Design",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Provide ultimate e-commerce solution as well as customizations for your e-commerce business",
     href: "",
   },
 ];

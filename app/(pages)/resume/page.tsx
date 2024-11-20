@@ -1,10 +1,28 @@
 "use client";
-import { FaHtml5, FaCss3 } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaGitSquare,
+  FaGithub,
+  FaSass,
+  FaBootstrap,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiDotnet,
+  SiCsharp,
+  SiJavascript,
+  SiPostgresql,
+  SiRedis,
+  SiMysql,
+} from "react-icons/si";
 
 const about = {
   title: "About me",
   description:
-    "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    "I love solving problems and building things through code. Programming isn't just my profession, it's my passion. I enjoy exploring new technologies, and enhancing my knowledge.",
   info: [
     {
       fieldName: "Name",
@@ -43,48 +61,48 @@ const about = {
 //experience data
 const experience = {
   icon: "",
-  title: "My experience",
+  title: "My Experience",
   description:
-    "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    "With 2 years of experience. I have honed my skills in frontend and backend development with a strong foundation in ASP.NET Core MVC and Webapi ",
   items: [
     {
       company: "Edesh-Ltd",
       position: "Full Stack Developer",
-      duration: "2024 - Present",
+      duration: "Feb 2024 - Present",
     },
     {
-      company: "Edesh-Ltd 2",
-      position: "Full Stack Developer",
-      duration: "2023 - 2024",
+      company: "Edesh-Ltd",
+      position: "Back-end Developer Intern",
+      duration: "Nov 2023 - Jan 2024",
     },
     {
-      company: "Edesh-Ltd 2",
-      position: "Full Stack Developer",
-      duration: "2023 - 2024",
-    },
-    {
-      company: "Edesh-Ltd 2",
-      position: "Full Stack Developer",
-      duration: "2023 - 2024",
-    },
-    {
-      company: "Edesh-Ltd 2",
-      position: "Full Stack Developer",
-      duration: "2023 - 2024",
+      company: "Clone Studio",
+      position: "Front-end Developer",
+      duration: "Feb 2023 - Oct 2023",
     },
   ],
 };
 //education data
 const education = {
   icon: "",
-  title: "My education",
+  title: "My Education",
   description:
-    "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    "I have Completed a Bachelor’s in Computer Science from Independent University, Bangladesh, preceded by an HSC from Cambrian College and a Dakhil Certificate from Gazirchat Madinatul Ulum Fajil Madrasha, building a strong foundation in science, technology, and Islamic studies.",
   items: [
     {
       institution: "Independent University, Bangladesh",
       degree: "Computer Science",
-      duration: "2020",
+      duration: "2015 - 2020",
+    },
+    {
+      institution: "Cambrian College",
+      degree: "HSC",
+      duration: "2012 - 2014",
+    },
+    {
+      institution: "Gazirchat Madinatul ulum Fajil Madrasha",
+      degree: "Dakhil",
+      duration: "2010 - 2012",
     },
   ],
 };
@@ -92,7 +110,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    "Skilled in designing and developing robust web applications with a strong foundation in Object-Oriented Programming (OOP), algorithms, and data structures. Proficient in clean code architecture, implementing scalable solutions using .NET, ASP.NET Core, MVC, WebAPI, and Razor Pages. Experienced with both frontend and backend technologies, including C#, SQL, MySQL, Redis, React, Next.js, HTML5, JavaScript, CSS, Sass, Tailwind CSS, and Bootstrap.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -100,31 +118,59 @@ const skills = {
     },
     {
       icon: <FaCss3 />,
-      name: "CSS",
+      name: "CSS 3",
     },
     {
-      icon: <FaCss3 />,
-      name: "CSS",
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
     },
     {
-      icon: <FaCss3 />,
-      name: "CSS",
+      icon: <FaSass />,
+      name: "Sass",
     },
     {
-      icon: <FaCss3 />,
-      name: "CSS",
+      icon: <SiJavascript />,
+      name: "Javascript",
     },
     {
-      icon: <FaCss3 />,
-      name: "CSS",
+      icon: <FaReact />,
+      name: "React Js",
     },
     {
-      icon: <FaCss3 />,
-      name: "CSS",
+      icon: <SiNextdotjs />,
+      name: "Next Js",
     },
     {
-      icon: <FaCss3 />,
-      name: "CSS",
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
+    },
+    {
+      icon: <SiDotnet />,
+      name: ".NET",
+    },
+    {
+      icon: <SiCsharp />,
+      name: "C#",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySql",
+    },
+    {
+      icon: <SiRedis />,
+      name: "Redis",
+    },
+    {
+      icon: <FaGitSquare />,
+      name: "Git",
+    },
+    {
+      icon: <FaGithub />,
+      name: "Github",
     },
   ],
 };
@@ -200,7 +246,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[300px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
                       return (
@@ -231,26 +277,28 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {skills.description}
                 </p>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="h-[250px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
             {/* about me */}
