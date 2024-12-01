@@ -33,7 +33,7 @@ const Home = () => {
                 <Link
                   target="_blank"
                   href={
-                    "https://drive.google.com/file/d/19lczHy66qK-izEs4h6U21HDxZcZF_hzz/view?usp=sharing"
+                    "https://drive.google.com/file/d/1ca-sWlCrtWdTbNsy6lpyyBtTt1fhFqVB/view?usp=sharing"
                   }
                 >
                   Download CV
