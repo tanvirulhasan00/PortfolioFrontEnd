@@ -1,23 +1,23 @@
 "use client";
 import { motion } from "motion/react";
-import axios, { HttpStatusCode } from "axios";
+// import axios, { HttpStatusCode } from "axios";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { BsArrowDownRight } from "react-icons/bs";
 
-type Service = {
-  success: boolean;
-  statusCode: HttpStatusCode;
-  message: string;
-  error: object;
-  data: [
-    {
-      id: number;
-      name: string;
-      description: string;
-    }
-  ];
-};
+// type Service = {
+//   success: boolean;
+//   statusCode: HttpStatusCode;
+//   message: string;
+//   error: object;
+//   data: [
+//     {
+//       id: number;
+//       name: string;
+//       description: string;
+//     }
+//   ];
+// };
 const data = [
   {
     id: "01",
@@ -39,30 +39,30 @@ const data = [
   },
 ];
 const Services = () => {
-  const [services, setServices] = useState<Service>();
-  const [error, setError] = useState();
-  const [loading, setLoading] = useState(false);
+  // const [services, setServices] = useState<Service>();
+  // const [error, setError] = useState();
+  // const [loading, setLoading] = useState(false);
 
-  const baseUrl = "https://localhost:7013/api/service/GetAll";
+  // const baseUrl = "https://localhost:7013/api/service/GetAll";
 
-  const fetchData = async () => {
-    await axios
-      .get(baseUrl)
-      .then((res) => {
-        return setLoading(true), setServices(res.data);
-      })
-      .catch((error) => setError(error))
-      .finally(() => setLoading(false));
-  };
-  useEffect(() => {
-    // fetchData();
-  }, []);
+  // const fetchData = async () => {
+  //   await axios
+  //     .get(baseUrl)
+  //     .then((res) => {
+  //       return setLoading(true), setServices(res.data);
+  //     })
+  //     .catch((error) => setError(error))
+  //     .finally(() => setLoading(false));
+  // };
+  // useEffect(() => {
+  //   // fetchData();
+  // }, []);
 
-  console.log("data", services);
-  console.log("error", error);
+  // console.log("data", services);
+  // console.log("error", error);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  // if (loading) return <p>Loading...</p>;
+  // if (error) return <p>Error: {error}</p>;
 
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
