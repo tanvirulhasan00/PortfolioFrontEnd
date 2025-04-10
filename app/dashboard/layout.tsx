@@ -1,11 +1,10 @@
-import Header from "@/components/dashboard/Header";
+import NavAndSideBar from "@/components/dashboard/NavAndSideBar";
 import React from "react";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section>
-      <Header />
-      {children}
+    <section className="">
+      <NavAndSideBar ch={children} />
     </section>
   );
 };
